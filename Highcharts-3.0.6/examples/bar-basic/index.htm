@@ -6,19 +6,41 @@
 
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 		<script type="text/javascript">
+			
+		$(document).ready(function(){
+			$.ajax({
+				type: "GET",
+				url: "chartdata.xml"
+				dataType: "xml",
+				success: function(xml) {
+					
+					$(xml).find('person').each(function(){
+						var $person = $(this);
+						var personList = [];
+						personList.push($person.attr("name"));
+				}
+			}
+		}
+			
+			
+			
+			
+/*			
 $(function () {
+	var stevenswins = 300
+	var testArray = [300, 600, 200, 100, 500, 200] 
         $('#container').highcharts({
             chart: {
-                type: 'bar'
+                type: 'column'
             },
             title: {
-                text: 'Historic World Population by Region'
+                text: 'Class Wins'
             },
             subtitle: {
-                text: 'Source: Wikipedia.org'
+                text: 'Source: melissaborden'
             },
             xAxis: {
-                categories: ['Africa', 'America', 'Asia', 'Europe', 'Oceania'],
+                categories: ['Caroline', 'Melissa', 'Maegan', 'Mindy', 'Katie', 'Nick', 'Steven'],
                 title: {
                     text: null
                 }
@@ -59,18 +81,18 @@ $(function () {
             },
             series: [{
                 name: 'Year 1800',
-                data: [107, 31, 635, 203, 2]
+                data: [107, 31, 635, 203, 2, 0, stevenswins]
             }, {
                 name: 'Year 1900',
-                data: [133, 156, 947, 408, 6]
+                data: testArray
             }, {
                 name: 'Year 2008',
-                data: [973, 914, 4054, 732, 34]
+                data: [973, 914, 4054, 732, 34, 0, 0]
             }]
         });
     });
     
-
+*/
 		</script>
 	</head>
 	<body>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<people>
+    <person name="Steven">
+        <classes>3</classes>
+        <age>32</age>
+        <shootingpercent>7</shootingpercent>
+    </person>
+    <person name="Mindy">
+        <classes>5</classes>
+        <age>21</age>
+        <shootingpercent>14</shootingpercent>
+    </person><person name="Katie">
+        <classes>4</classes>
+        <age>21</age>
+        <shootingpercent>21</shootingpercent>
+    </person><person name="Nick">
+        <classes>5</classes>
+        <age>28</age>
+        <shootingpercent>14</shootingpercent>
+    </person><person name="Maegan">
+        <classes>4</classes>
+        <age>20</age>
+        <shootingpercent>14</shootingpercent>
+    </person><person name="Melissa">
+        <classes>5</classes>
+        <age>21</age>
+        <shootingpercent>14</shootingpercent>
+    </person><person name="Caroline">
+        <classes>6</classes>
+        <age>22</age>
+        <shootingpercent>14</shootingpercent>
+    </person>
+</people>
